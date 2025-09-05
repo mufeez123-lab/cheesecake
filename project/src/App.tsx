@@ -1,23 +1,28 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Menu from './components/Menu';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
+import Home from "./pages/Home";
+
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <Services />
-      <Menu />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+        {/* Header always visible */}
+        
+
+        {/* Page Content */}
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            
+          </Routes>
+        </main>
+
+   
+      </div>
+    </Router>
   );
 }
 

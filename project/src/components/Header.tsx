@@ -5,36 +5,43 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white  border-black  border-b sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="bg-orange-300 border-black border-b  sticky top-0 z-50 py-0">
+      <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-              {/* <span className="text-black font-bold text-xl">K</span> */}
+         {/* Logo */}
+<div className="flex items-center space-x-2">
+  <a href="/" className="flex items-center">
+    <img
+      src="/images/logo.png"
+      alt="Kunafa World Logo"
+      className="w-48 h-20 rounded-full object-cover"
+    />
+  </a>
+</div>
+
+
+          {/* Desktop Navigation + Actions */}
+          <div className="hidden md:flex items-center space-x-8 ml-auto  ">
+            {/* Navigation */}
+            <nav className="flex space-x-8 bg-black px-6 py-3 rounded-full">
+              <a href="#home" className="text-white font-playfair hover:text-yellow-500 font-medium transition-colors">Home</a>
+              <a href="#services" className="text-white font-playfair hover:text-yellow-500 font-medium transition-colors">Services</a>
+              <a href="#menu" className="text-white font-playfair hover:text-yellow-500 font-medium transition-colors">Menu</a>
+              <a href="#about" className="text-white font-playfair hover:text-yellow-500 font-medium transition-colors">About</a>
+              <a href="#contact" className="text-white font-playfair hover:text-yellow-500 font-medium transition-colors">Contact</a>
+            </nav>
+
+            {/* Action Buttons */}
+            <div className="flex items-center space-x-4">
+              <button className="bg-black text-black px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors flex items-center space-x-2">
+                <ShoppingBag size={18} className='text-white'/>
+                <span className='text-white'>Order Now</span>
+              </button>
+              <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <Phone size={18} />
+                <span>Call Us</span>
+              </button>
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 font-montez">Kunafa World</h1>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 bg-yellow-400 px-4 py-4 rounded-full ml-64 ">
-            <a href="#home" className="  text-black font-playfair hover:text-yellow-500 font-medium transition-colors">Home</a>
-            <a href="#services" className="text-black font-playfair hover:text-yellow-500 font-medium transition-colors">Services</a>
-            <a href="#menu" className="text-black font-playfair hover:text-yellow-500 font-medium transition-colors">Menu</a>
-            <a href="#about" className="text-black font-playfair hover:text-yellow-500 font-medium transition-colors">About</a>
-            <a href="#contact" className="text-black font-playfair hover:text-yellow-500 font-medium transition-colors">Contact</a>
-          </nav>
-
-          {/* Action Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-yellow-400 text-black px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors flex items-center space-x-2">
-              <ShoppingBag size={18} />
-              <span>Order Now</span>
-            </button>
-            <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors flex items-center space-x-2">
-              <Phone size={18} />
-              <span>Call Us</span>
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
