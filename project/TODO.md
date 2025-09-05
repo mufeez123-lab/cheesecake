@@ -1,4 +1,4 @@
-# Add Fancy Fonts to Kunafa World Website
+# Add Fancy Fonts to Cheese cake World Website
 
 ## Tasks
 - [x] Update index.html to add Google Fonts imports for 'Dancing Script' and 'Playfair Display'
