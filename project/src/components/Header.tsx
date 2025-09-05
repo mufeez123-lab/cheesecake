@@ -5,7 +5,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-orange-300 border-black border-b  sticky top-0 z-50 py-0">
+    <header className="bg-orange-300   sticky top-0 z-50 py-0">
       <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between items-center py-4">
          {/* Logo */}

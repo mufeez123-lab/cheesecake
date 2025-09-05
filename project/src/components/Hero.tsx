@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       <div
   className="absolute inset-1  bg-cover bg-center"
   style={{
-    backgroundImage: "url('/images/gback.png')",
+    backgroundImage: "url('/images/back.png')",
     backgroundSize: "cover",
     backgroundPosition: "center"
   }}
@@ -17,7 +18,7 @@ const Hero = () => {
 
 
       {/* Overlay for readability */}
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-yellow-50/80 to-white/90"></div> */}
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-50/80 to-white/70"></div>
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -25,17 +26,27 @@ const Hero = () => {
           {/* Text Content */}
           <div className="relative text-center lg:text-left py-10">
             {/* Background Image (only for mobile) */}
-            <div className="absolute inset-0 bg-[url('/images/honey.png')] bg-cover bg-center opacity-40 sm:hidden"></div>
+            <div className="absolute inset-0 bg-[url('/images/paperr.png')] bg-cover bg-center opacity-40 sm:hidden"></div>
 
             <div className="relative z-10">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight font-dancing">
-                Taste the Royal <span className="text-yellow-500">Kunafa</span>
-              </h1>
+             <h1
+  className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-6 leading-tight font-dancing"
+>
+<motion.span
+  initial={{ opacity: 0, textShadow: "0px 0px 0px #facc15" }}
+  animate={{ opacity: 1, textShadow: "0px 0px 20px #facc15" }}
+  transition={{ duration: 1.5, ease: "easeInOut" }}
+>
+  Gooey Basque <span className="text-yellow-500">Cheesecake</span>
+</motion.span>
+
+
+</h1>
               <p className="text-xl md:text-2xl text-gray-700 font-playfair font-medium mb-8">
                 Sweet, cheesy, and perfectly crispy
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start md:-ml-20 lg:-ml-20">
                 <button className="font-dancing bg-black items-center text-white py-4 mx-20 md:px-8 md:py-4 lg:px-8 lg:py-4 rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 text-lg font-semibold shadow-lg">
                   View Menu
                 </button>
