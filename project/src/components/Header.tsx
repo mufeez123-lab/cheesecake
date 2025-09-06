@@ -56,7 +56,7 @@ const Header = () => {
             </nav>
 
             {/* Action Buttons */}
-            <div className="flex  space-x-4">
+            <div className="flex items-center space-x-4">
               <button className="bg-yellow-400 text-amber-900 px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors flex items-center space-x-2 shadow-md">
                 <ShoppingBag size={18} />
                 <span>Order Now</span>
