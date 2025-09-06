@@ -22,7 +22,7 @@ const Hero = () => {
       <motion.img
         src="/images/paperr.png"
         alt="Decorative Cheesecake"
-       className="absolute top-20 right-30 md:top-40 md:right-48 md:mt-28 md:mr-32 lg:mt-28 lg:mr-32     lg:top-40 lg:right-48
+       className="absolute top-20 right-30 md:top-40 md:right-48 md:mt-28 md:mr-32 lg:mt-28 lg:mr-32 filter brightness-110    lg:top-40 lg:right-48
             w-52  sm:w-48 md:w-80 lg:w-[600px] 
             object-contain"
 
