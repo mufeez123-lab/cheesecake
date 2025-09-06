@@ -1,44 +1,58 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Menu = () => {
-  const menuItems = [
-    {
-      name: "Classic Cheese Cheese cake",
-      price: "₹120.99",
-      description: "Traditional Cheese cake with creamy cheese filling and crispy shredded pastry",
-      image: "/images/cheese1.png"
-    },
-    {
-      name: "Nutty Delight Cheese cake",
-      price: "₹150.99",
-      description: "Premium Cheese cake topped with mixed nuts, pistachios, and almonds",
-      image: "/images/cheese3.png"
-    },
-    {
-      name: "Cream Dream Cheese cake",
-      price: "₹140.99",
-      description: "Rich and creamy Cheese cake with vanilla custard and fresh cream",
-      image: "/images/cheese2.png"
-    },
-    {
-      name: "Chocolate Fusion Cheese cake",
-      price: "₹160.99",
-      description: "Modern twist with chocolate chips and cocoa-infused cream",
-      image: "/images/kunafaremove.png"
-    },
-    {
-      name: "Royal Saffron Cheese cake",
-      price: "₹190.99",
-      description: "Luxurious Cheese cake infused with saffron and topped with gold flakes",
-      image: "/images/honey.png"
-    },
-    {
-      name: "Party Platter Special",
-      price: "₹499.99",
-      description: "Large family-size Cheese cake perfect for celebrations and gatherings",
-      image: "/images/cheese3.png"
-    }
-  ];
+const menuItems = [
+  {
+    id: 1,  // Added id
+    name: "Classic Cheese Cheese cake",
+    price: "₹120.99",
+    description: "Traditional Cheese cake with creamy cheese filling and crispy shredded pastry",
+    image: "/images/cheese1.png"
+  },
+  {
+    id: 2,  // Added id
+    name: "Nutty Delight Cheese cake",
+    price: "₹150.99",
+    description: "Premium Cheese cake topped with mixed nuts, pistachios, and almonds",
+    image: "/images/cheese3.png"
+  },
+  {
+    id: 3,  // Added id
+    name: "Cream Dream Cheese cake",
+    price: "₹140.99",
+    description: "Rich and creamy Cheese cake with vanilla custard and fresh cream",
+    image: "/images/cheese2.png"
+  },
+  {
+    id: 4,  // Added id
+    name: "Chocolate Fusion Cheese cake",
+    price: "₹160.99",
+    description: "Modern twist with chocolate chips and cocoa-infused cream",
+    image: "/images/kunafaremove.png"
+  },
+  {
+    id: 5,  // Added id
+    name: "Royal Saffron Cheese cake",
+    price: "₹190.99",
+    description: "Luxurious Cheese cake infused with saffron and topped with gold flakes",
+    image: "/images/honey.png"
+  },
+  {
+    id: 6,  // Added id
+    name: "Party Platter Special",
+    price: "₹499.99",
+    description: "Large family-size Cheese cake perfect for celebrations and gatherings",
+    image: "/images/cheese3.png"
+  }
+];
+
+
+
+   const navigate = useNavigate(); // Hook to handle navigation
+
+  const handleOrderNow = (itemId: number) => {
+    navigate(`menudetails/${itemId}`); // Navigate to the MenuDetails page
+  };
 
   return (
     <section id="menu" className="py-20 relative bg-gradient-to-br from-yellow-50 to-white overflow-hidden">
@@ -74,23 +88,26 @@ const Menu = () => {
               data-aos-duration="800"
             >
               {/* Image + Price Badge */}
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden ">
                 <img 
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-56 object-cover  group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-4 py-1 rounded-full font-bold shadow-md">
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 px-4 py-1 rounded-full font-bold shadow-md">
                   {item.price}
                 </div>
               </div>
               
               {/* Card Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.name}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{item.description}</p>
+                <h3 className="text-xl font-bold font-playfair text-gray-900 mb-3">{item.name}</h3>
+                <p className="text-gray-800 text-xl mb-6 leading-relaxed font-dancing">{item.description}</p>
                 
-                <button className="w-full bg-yellow-500 text-black py-3 rounded-full font-semibold hover:bg-yellow-600 transition-colors">
+              <button
+                  onClick={() => handleOrderNow(index)} // Trigger navigation
+                  className="w-full bg-amber-800 text-white py-3 rounded-full font-semibold hover:bg-amber-400 transition-colors"
+                >
                   Order now
                 </button>
               </div>

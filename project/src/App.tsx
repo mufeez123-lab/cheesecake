@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Home from "./pages/Home";
-// import ContactPage from './pages/ContactPage'
+import Menu from "./pages/MenuItem";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -62,6 +62,7 @@ function AppContent() {
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
+            <Route path="/menudetails" element={<Menu/>} />
       
           </Routes>
         </AnimatePresence>

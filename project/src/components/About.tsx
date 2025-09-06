@@ -34,7 +34,7 @@ const About = () => {
             <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-white text-center md:text-center lg:text-center leading-relaxed font-montez max-w-2xl mx-auto lg:mx-0 ">
               For over two decades,{" "}
               <span className="text-yellow-400">Cheese Cake </span>
-              has been th <br /> premier destination for authentic Middle Eastern
+              has been the <br /> premier destination for authentic Middle Eastern
               Cheese cake. <br /> Our master chefs use time-honored recipes passed
               down through generations, combining traditional techniques with
               the finest ingredients to create the perfect Cheese cake
@@ -43,7 +43,7 @@ const About = () => {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white text-center md:text-center lg:text-center leading-relaxed font-montez max-w-2xl mx-auto lg:mx-0">
               For over two decades,{" "}
              <span className="text-yellow-400">Cheese Cake </span>
-              has been th <br /> premier destination for authentic Middle Eastern
+              has been the <br /> premier destination for authentic Middle Eastern
               Cheese cake. <br /> Our master chefs use time-honored recipes passed
               down through generations, combining traditional techniques with
               the finest ingredients to create the perfect Cheese cake
@@ -52,7 +52,7 @@ const About = () => {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white text-center md:text-center lg:text-center leading-relaxed font-montez max-w-2xl mx-auto lg:mx-0">
               For over two decades,{" "}
              <span className="text-yellow-400">Cheese Cake </span>
-              has been th <br /> premier destination for authentic Middle Eastern
+              has been the <br /> premier destination for authentic Middle Eastern
               Cheese cake. <br /> Our master chefs use time-honored recipes passed
               down through generations, combining traditional techniques with
               the finest ingredients to create the perfect Cheese cake

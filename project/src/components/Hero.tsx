@@ -23,7 +23,7 @@ const Hero = () => {
         src="/images/paperr.png"
         alt="Decorative Cheesecake"
        className="absolute top-20 right-30 md:top-40 md:right-48  md:mt-28 md:mr-32 lg:mt-28 lg:mr-32 filter brightness-110    lg:top-40 lg:right-48
-            w-60  sm:w-48 md:w-80 lg:w-[600px] 
+            w-60  sm:w-48 md:w-80 lg:w-[700px] 
             object-contain"
 
         animate={{ y: [0, -20, 0] }}
