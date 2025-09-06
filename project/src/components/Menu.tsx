@@ -54,7 +54,7 @@ const Menu = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold font-montez mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold font-montez mb-4 md:mt-10 lg:mt-10">
             <span className="text-gray-900">Our</span>{" "}
             <span className="text-yellow-500 drop-shadow-md">Menu</span>
           </h2>

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden "
     >
       {/* Background */}
       <div
@@ -22,8 +22,8 @@ const Hero = () => {
       <motion.img
         src="/images/paperr.png"
         alt="Decorative Cheesecake"
-       className="absolute top-20 right-30 md:top-40 md:right-48    lg:top-40 lg:right-48
-            w-36  sm:w-48 md:w-80 lg:w-[500px] 
+       className="absolute top-20 right-30 md:top-40 md:right-48 md:mt-28 md:mr-32 lg:mt-28 lg:mr-32    lg:top-40 lg:right-48
+            w-52  sm:w-48 md:w-80 lg:w-[600px] 
             object-contain"
 
         animate={{ y: [0, -20, 0] }}
@@ -63,7 +63,7 @@ const Hero = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="font-dancing bg-gradient-to-r from-yellow-400 to-amber-500 text-white px-10 py-4 mx-20  lg:px-10 lg:py-4  md:px-10 md:py-4 rounded-full shadow-lg hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 text-lg font-semibold"
+                  className="font-dancing bg-gradient-to-r from-yellow-400 to-amber-500 text-black  px-10 py-4 mx-20   rounded-full shadow-lg hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 text-lg font-semibold"
                 >
                   View Menu
                 </motion.button>
