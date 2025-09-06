@@ -5,7 +5,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-orange-200 sticky top-0 z-50 shadow-md">
+    <header className="bg-orange-900 sticky top-0 z-50 shadow-md">
       <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between items-center py-1 lg:py-4 md:py-4">
           {/* Logo */}
@@ -14,7 +14,7 @@ const Header = () => {
               <img
                 src="/images/logo.png"
                 alt="Cheese cake World Logo"
-                className="md:w-48 md:h-20 lg:w-48 lg:h-20 w-24 h-24 rounded-full object-cover pb-2"
+                className="md:w-48 md:h-20 lg:w-48 lg:h-20 w-24 h-24 rounded-full object-cover pb-2 filter invert"
               />
             </a>
           </div>

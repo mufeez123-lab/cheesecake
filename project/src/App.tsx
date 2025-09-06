@@ -15,7 +15,7 @@ function AppContent() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 2000);
 
     // Initialize AOS animations globally
     AOS.init({

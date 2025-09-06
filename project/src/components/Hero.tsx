@@ -11,18 +11,18 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/back.png')",
+          backgroundImage: "url('/images/back.jpg')",
         }}
       ></div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-yellow-50/90 via-white/80 to-amber-50/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/80 to-amber-600/80"></div>
 
       {/* Decorative Floating Image Above Content */}
       <motion.img
         src="/images/paperr.png"
         alt="Decorative Cheesecake"
-       className="absolute top-20 right-30 md:top-40 md:right-48 md:mt-28 md:mr-32 lg:mt-28 lg:mr-32    lg:top-40 lg:right-48
+       className="absolute top-20 right-30 md:top-40 md:right-48 md:mt-28 md:mr-32 lg:mt-28 lg:mr-32     lg:top-40 lg:right-48
             w-52  sm:w-48 md:w-80 lg:w-[600px] 
             object-contain"
 
@@ -51,11 +51,11 @@ const Hero = () => {
                   transition={{ duration: 1.5, ease: "easeInOut" }}
                 >
                   Gooey Basque{" "}
-                  <span className="text-yellow-500">Cheesecake</span>
+                  <span className="text-amber-900">Cheesecake</span>
                 </motion.span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-700 font-playfair font-medium mb-8">
+              <p className="text-xl md:text-2xl text-gray-100 font-playfair font-medium mb-8">
                 Sweet, cheesy, and perfectly crispy
               </p>
 
