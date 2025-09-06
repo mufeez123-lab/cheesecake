@@ -20,7 +20,7 @@ function AppContent() {
     // Initialize AOS animations globally
     AOS.init({
       duration: 800,
-      once: true, // Animations repeat every time element enters viewport
+      once: false, // Animations repeat every time element enters viewport
     });
 
     return () => clearTimeout(timer);

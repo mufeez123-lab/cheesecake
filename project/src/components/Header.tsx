@@ -14,7 +14,7 @@ const Header = () => {
               <img
                 src="/images/logo.png"
                 alt="Cheese cake World Logo"
-                className="md:w-48 md:h-20 lg:w-48 lg:h-20 w-24 h-24 rounded-full object-cover pb-2 filter invert"
+                className="md:w-48 md:h-20 lg:w-48 lg:h-20 w-24 h-24 rounded-full object-cover pb-2 filter invert  "
               />
             </a>
           </div>
@@ -30,10 +30,10 @@ const Header = () => {
                 Home
               </a>
               <a
-                href="#services"
+                href="#about"
                 className="text-white font-playfair hover:text-yellow-300 font-medium transition-colors"
               >
-                Services
+                About
               </a>
               <a
                 href="#menu"
@@ -42,10 +42,10 @@ const Header = () => {
                 Menu
               </a>
               <a
-                href="#about"
+                href="#services"
                 className="text-white font-playfair hover:text-yellow-300 font-medium transition-colors"
               >
-                About
+                Services
               </a>
               <a
                 href="#contact"
@@ -72,10 +72,19 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+          <div className="md:hidden text-white">
+          <button
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+  className="transition-all duration-300 ease-in-out"
+>
+  {isMenuOpen ? (
+    <X size={30} strokeWidth={1} className="transform transition-all duration-600 ease-in-out" />
+  ) : (
+    <Menu size={30} strokeWidth={1} className="transform transition-all duration-600 ease-in-out" />
+  )}
+</button>
+
+
           </div>
         </div>
 

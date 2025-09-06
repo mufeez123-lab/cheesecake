@@ -79,7 +79,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-6 md:mt-10 pt-4 text-center">
           <p className="text-gray-400 text-xs md:text-sm">
-            © 2025 Cheese Cake World. All rights reserved. Made with ❤️ for Cheese cake lovers everywhere.
+            © 2025 Gooey Bascue Cheese cake. All rights reserved. Made with ❤️ 
           </p>
         </div>
       </div>

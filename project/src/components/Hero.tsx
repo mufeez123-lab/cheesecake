@@ -22,8 +22,8 @@ const Hero = () => {
       <motion.img
         src="/images/paperr.png"
         alt="Decorative Cheesecake"
-       className="absolute top-20 right-30 md:top-40 md:right-48 md:mt-28 md:mr-32 lg:mt-28 lg:mr-32 filter brightness-110    lg:top-40 lg:right-48
-            w-52  sm:w-48 md:w-80 lg:w-[600px] 
+       className="absolute top-20 right-30 md:top-40 md:right-48  md:mt-28 md:mr-32 lg:mt-28 lg:mr-32 filter brightness-110    lg:top-40 lg:right-48
+            w-60  sm:w-48 md:w-80 lg:w-[600px] 
             object-contain"
 
         animate={{ y: [0, -20, 0] }}
@@ -41,12 +41,12 @@ const Hero = () => {
             className="relative text-center lg:text-left py-10"
           >
             <div className="relative z-10">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-amber-900 mb-6 leading-tight font-dancing mt-20">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-amber-900 mb-6 leading-tight font-dancing mt-32">
                 <motion.span
                   initial={{ opacity: 0, textShadow: "0px 0px 0px #facc15" }}
                   animate={{
                     opacity: 1,
-                    textShadow: "0px 0px 20px #facc15",
+                    textShadow: "0px 0px 20px #fffb00ff",
                   }}
                   transition={{ duration: 1.5, ease: "easeInOut" }}
                 >
@@ -55,7 +55,7 @@ const Hero = () => {
                 </motion.span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-100 font-playfair font-medium mb-8">
+              <p className="text-xl md:text-2xl text-white font-dancing font-medium mb-8">
                 Sweet, cheesy, and perfectly crispy
               </p>
 
